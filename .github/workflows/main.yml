@@ -1,5 +1,9 @@
 name: hello-world
 on: push
+
+env:
+  SPECTRAL_DSN: https://spu-e547a47732c946f7b8a1c951e459b845@get.spectralops.io
+
 jobs:
   scan:
     runs-on: ubuntu-latest
