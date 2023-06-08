@@ -1,8 +1,12 @@
 name: hello-world
 on: push
 jobs:
-  my-job:
+  scan:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: spectral.exe scan --dsn https://spu-e547a47732c946f7b8a1c951e459b845@get.spectralops.io --include-tags base,audit
+      - uses: actions/checkout@v3
+      - name: Install and run Spectral CI
+        uses: spectralops/spectral-github-action@v3
+        with:
+          spectral-dsn: https://spu-e547a47732c946f7b8a1c951e459b845@get.spectralops.io
+          spectral-args: scan --include-tags base,audit
