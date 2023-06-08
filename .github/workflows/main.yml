@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "Hello World!"
+        run: spectral.exe scan --dsn https://spu-e547a47732c946f7b8a1c951e459b845@get.spectralops.io --include-tags base,audit
