@@ -13,6 +13,9 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v3
+        with: 
+          fetch-depth: 0
+      - run: git diff --name-only ${{ github.event.before }} ${{ github.sha }}
       - name: Install and run Spectral CI
         uses: spectralops/spectral-github-action@v3
         with:
