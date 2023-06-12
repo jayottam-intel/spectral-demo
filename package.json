@@ -1,0 +1,23 @@
+{
+  "name": "spectral-demo",
+  "version": "1.0.0",
+  "main": "abc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayottam-intel/spectral-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayottam-intel/spectral-demo/issues"
+  },
+  "homepage": "https://github.com/jayottam-intel/spectral-demo#readme",
+  "dependencies": {
+    "eslint": "^8.42.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
