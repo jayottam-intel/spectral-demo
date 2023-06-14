@@ -2,7 +2,7 @@ name: hello-world
 on: push
 
 env:
-  SPECTRAL_DSN: https://spu-e547a47732c946f7b8a1c951e459b845@get.spectralops.io
+  SPECTRAL_DSN: https://spu-611d48d6aea54688810e914873eeeaf1@get.spectralops.io
 
 jobs:
   scan:
@@ -19,5 +19,5 @@ jobs:
       - name: Install and run Spectral CI
         uses: spectralops/spectral-github-action@v3
         with:
-          spectral-dsn: https://spu-e547a47732c946f7b8a1c951e459b845@get.spectralops.io
+          spectral-dsn: https://spu-611d48d6aea54688810e914873eeeaf1@get.spectralops.io
           spectral-args: scan --include-tags base,audit --json-v2 results.json --ok     
